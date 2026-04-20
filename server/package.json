@@ -4,7 +4,9 @@
     "main": "index.js",
     "scripts": {
         "dev": "nodemon index.js",
-        "start": "node index.js"
+        "start": "node index.js",
+        "test": "jest --testPathPattern=src/controllers",
+        "test:watch": "jest --testPathPattern=src/controllers --watch"
     },
     "keywords": [],
     "author": "",
@@ -22,6 +24,7 @@
         "sequelize": "^6.37.8"
     },
     "devDependencies": {
+        "jest": "^29.7.0",
         "nodemon": "^3.1.14"
     }
 }
