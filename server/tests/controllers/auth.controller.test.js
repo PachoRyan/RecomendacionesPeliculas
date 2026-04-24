@@ -1,9 +1,9 @@
-jest.mock('../models');
+jest.mock('../../src/models');
 jest.mock('bcryptjs');
 jest.mock('jsonwebtoken');
 
-const { register, login } = require('./auth.controller');
-const { User } = require('../models');
+const { register, login } = require('../../src/controllers/auth.controller');
+const { User } = require('../../src/models');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
