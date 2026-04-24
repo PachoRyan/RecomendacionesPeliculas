@@ -1,11 +1,11 @@
-jest.mock('../services/gemini');
-jest.mock('../services/tmdb');
-jest.mock('../models');
+jest.mock('../../src/services/gemini');
+jest.mock('../../src/services/tmdb');
+jest.mock('../../src/models');
 
-const { smartSearch } = require('./search.controller');
-const { parseSearchQuery } = require('../services/gemini');
-const { searchMovies, discoverMovies } = require('../services/tmdb');
-const { SearchHistory } = require('../models');
+const { smartSearch } = require('../../src/controllers/search.controller');
+const { parseSearchQuery } = require('../../src/services/gemini');
+const { searchMovies, discoverMovies } = require('../../src/services/tmdb');
+const { SearchHistory } = require('../../src/models');
 
 const mockReq = (query = {}, user = null) => ({ query, user });
 const mockRes = () => {
