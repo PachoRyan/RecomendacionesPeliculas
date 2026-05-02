@@ -5,8 +5,8 @@
     "scripts": {
         "dev": "nodemon index.js",
         "start": "node index.js",
-        "test": "jest --testPathPattern=src/controllers",
-        "test:watch": "jest --testPathPattern=src/controllers --watch"
+        "test": "jest --testPathPattern=tests/controllers",
+        "test:watch": "jest --testPathPattern=tests/controllers --watch"
     },
     "keywords": [],
     "author": "",

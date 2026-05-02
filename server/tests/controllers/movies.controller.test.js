@@ -1,10 +1,10 @@
-jest.mock('../services/tmdb');
-jest.mock('../services/gemini');
+jest.mock('../../src/services/tmdb');
+jest.mock('../../src/services/gemini');
 jest.mock('axios');
 
-const { search, details, videos, reviews } = require('./movies.controller');
-const { searchMovies, getMovieDetails, getMovieVideos, getMovieReviews } = require('../services/tmdb');
-const { summarizeReviews } = require('../services/gemini');
+const { search, details, videos, reviews } = require('../../src/controllers/movies.controller');
+const { searchMovies, getMovieDetails, getMovieVideos, getMovieReviews } = require('../../src/services/tmdb');
+const { summarizeReviews } = require('../../src/services/gemini');
 const axios = require('axios');
 
 process.env.TMDB_TOKEN = 'test-tmdb-token';
