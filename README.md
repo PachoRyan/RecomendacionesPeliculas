@@ -112,6 +112,15 @@ npm run dev
 - Frontend: `http://localhost:5173`
 - Backend: `http://localhost:3001`
 
+### Pruebas Unitarias
+
+Para ejecutar la suite de pruebas automatizadas (unit tests) con Jest, ingresa al directorio del servidor y ejecuta:
+
+```bash
+cd server
+npm test
+```
+
 ---
 
 ## Variables de entorno
